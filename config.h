@@ -13,12 +13,15 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=14", "JoyPixels:pixelsize=12:antialias=true:autohint=true"  };
 static char dmenufont[]             = "monospace:size=14";
+
 static char normbgcolor[]           = "#000000";
-static char normbordercolor[]       = "#444444";
 static char normfgcolor[]           = "#ffffff";
-static char selfgcolor[]            = "#ffffff";
-static char selbordercolor[]        = "#eeeeee";
+static char normbordercolor[]       = "#444444";
+
 static char selbgcolor[]            = "#000000";
+static char selfgcolor[]            = "#fff400";
+static char selbordercolor[]        = "#eeeeee";
+
 static char *colors[][3] = {
        /*               fg           bg           border   */
        [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
