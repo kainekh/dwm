@@ -121,7 +121,7 @@ static Key keys[] = {
 
 	{ MODKEY,			XK_Tab,		view,		{0} },
 	/* { MODKEY|ShiftMask,		XK_Tab,		spawn,		SHCMD("") }, */
-	{ MODKEY|Mod1Mask,			XK_q,		killclient,	{0} },
+	{ MODKEY|ShiftMask,			XK_q,		killclient,	{0} },
 	{ MODKEY|Mod1Mask,			XK_t,		setlayout,	{.v = &layouts[0]} }, /* tile */
 	{ MODKEY|Mod1Mask,		XK_r,		setlayout,	{.v = &layouts[1]} }, /* bstack */
 	{ MODKEY|Mod1Mask,			XK_y,		setlayout,	{.v = &layouts[2]} }, /* spiral */
