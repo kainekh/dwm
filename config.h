@@ -149,13 +149,17 @@ static Key keys[] = {
 	/* J and K are automatically bound above in STACKEYS */
 	{ MODKEY,			XK_l,		setmfact,      	{.f = +0.05} },
 	{ MODKEY,			XK_h,		setmfact,      	{.f = -0.05} },
-	/*{ MODKEY,			XK_semicolon,	shifttag,	{ .i = +1 } },
+	{ MODKEY,			XK_semicolon,	shifttag,	{ .i = +1 } },
 	{ MODKEY|ShiftMask,		XK_semicolon,	shifttag,	{ .i = -1 } },
 	{ MODKEY,			XK_apostrophe,	togglescratch,	{.ui = 1} },
-	{ MODKEY|ShiftMask,		XK_apostrophe,	spawn,		SHCMD("") }, */
+	{ MODKEY|ShiftMask,		XK_apostrophe,	spawn,		SHCMD("") },
 	{ MODKEY,			XK_Return,	spawn,		{.v = termcmd } },
 	{ MODKEY|ShiftMask,		XK_Return,	togglescratch,	{.ui = 0} },
 
+	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
+	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
+	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
+	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 	/* { MODKEY|ShiftMask,		XK_z,		spawn,		SHCMD("") }, */
 	/* { MODKEY|ShiftMask,		XK_x,		spawn,		SHCMD("") }, */
 	/* { MODKEY,			XK_c,		spawn,		SHCMD("") }, */
