@@ -108,75 +108,75 @@ static Key keys[] = {
 	STACKKEYS(MODKEY,                          focus)
 	STACKKEYS(MODKEY|ShiftMask,                push)
 	/* { MODKEY|ShiftMask,		XK_Escape,	spawn,	SHCMD("") }, */
-	{ MODKEY,			XK_grave,	spawn,	SHCMD("dmenuunicode") },
+	{ MODKEY,				XK_grave,	spawn,	SHCMD("dmenuunicode") },
 	/* { MODKEY|ShiftMask,		XK_grave,	togglescratch,	SHCMD("") }, */
-	TAGKEYS(			XK_1,		0)
-	TAGKEYS(			XK_2,		1)
-	TAGKEYS(			XK_3,		2)
-	TAGKEYS(			XK_4,		3)
-	TAGKEYS(			XK_5,		4)
-	TAGKEYS(			XK_6,		5)
-	TAGKEYS(			XK_7,		6)
-	TAGKEYS(			XK_8,		7)
-	TAGKEYS(			XK_9,		8)
-	{ MODKEY,			XK_0,		view,		{.ui = ~0 } },
-	{ MODKEY|ShiftMask,		XK_0,		tag,		{.ui = ~0 } },
+	TAGKEYS(				XK_1,		0)
+	TAGKEYS(				XK_2,		1)
+	TAGKEYS(				XK_3,		2)
+	TAGKEYS(				XK_4,		3)
+	TAGKEYS(				XK_5,		4)
+	TAGKEYS(				XK_6,		5)
+	TAGKEYS(				XK_7,		6)
+	TAGKEYS(				XK_8,		7)
+	TAGKEYS(				XK_9,		8)
+	{ MODKEY,				XK_0,		view,		{.ui = ~0 } },
+	{ MODKEY|ShiftMask,			XK_0,		tag,		{.ui = ~0 } },
 
-	{ MODKEY,			XK_Tab,		view,		{0} },
-	/* { MODKEY|ShiftMask,		XK_Tab,		spawn,		SHCMD("") }, */
+	{ MODKEY,				XK_Tab,		view,		{0} },
+	/* { MODKEY|ShiftMask,			XK_Tab,		spawn,		SHCMD("") }, */
 	{ MODKEY|ShiftMask,			XK_q,		killclient,	{0} },
-	{ MODKEY|Mod1Mask,			XK_t,		setlayout,	{.v = &layouts[0]} }, /* tile */
-	{ MODKEY|Mod1Mask,		XK_r,		setlayout,	{.v = &layouts[1]} }, /* bstack */
-	{ MODKEY|Mod1Mask,			XK_y,		setlayout,	{.v = &layouts[2]} }, /* spiral */
-	{ MODKEY|Mod1Mask,		XK_d,		setlayout,	{.v = &layouts[3]} }, /* dwindle */
-	{ MODKEY|Mod1Mask,			XK_u,		setlayout,	{.v = &layouts[4]} }, /* deck */
-	{ MODKEY|Mod1Mask,		XK_f,		setlayout,	{.v = &layouts[5]} }, /* monocle */
-	{ MODKEY|Mod1Mask,			XK_c,		setlayout,	{.v = &layouts[6]} }, /* centeredmaster */
-	{ MODKEY|Mod1Mask,		XK_i,		setlayout,	{.v = &layouts[7]} }, /* centeredfloatingmaster */
+	{ MODKEY|Mod1Mask,			XK_F1,		setlayout,	{.v = &layouts[0]} }, /* tile */
+	{ MODKEY|Mod1Mask,			XK_F2,		setlayout,	{.v = &layouts[1]} }, /* bstack */
+	{ MODKEY|Mod1Mask,			XK_F3,		setlayout,	{.v = &layouts[2]} }, /* NULL */
+	{ MODKEY|Mod1Mask,			XK_F5,		setlayout,	{.v = &layouts[3]} }, /* spiral */
+	{ MODKEY|Mod1Mask,			XK_F6,		setlayout,	{.v = &layouts[4]} }, /* centeredmaster*/
+	{ MODKEY|Mod1Mask,			XK_F7,		setlayout,	{.v = &layouts[5]} }, /* centeredfloatingmaster*/
+	{ MODKEY|Mod1Mask,			XK_F8,		setlayout,	{.v = &layouts[6]} }, /* dwindle */
+	{ MODKEY|Mod1Mask,			XK_F9,		setlayout,	{.v = &layouts[7]} }, /* deck */
 	{ MODKEY|Mod1Mask,			XK_o,		incnmaster,     {.i = +1 } },
-	{ MODKEY|ShiftMask,		XK_o,		incnmaster,     {.i = -1 } },
-	{ MODKEY,			XK_backslash,		view,		{0} },
-	/* { MODKEY|ShiftMask,		XK_backslash,		spawn,		SHCMD("") }, */
+	{ MODKEY|ShiftMask,			XK_o,		incnmaster,     {.i = -1 } },
+	{ MODKEY,				XK_backslash,		view,		{0} },
+	/* { MODKEY|ShiftMask,			XK_backslash,		spawn,		SHCMD("") }, */
 
 	{ MODKEY|Mod1Mask,			XK_s,		togglesticky,	{0} },
-	/* { MODKEY|ShiftMask,		XK_s,		spawn,		SHCMD("") }, */
-	{ MODKEY,			XK_d,		spawn,          {.v = dmenucmd } },
-	/* { MODKEY,			XK_d,		spawn,		SHCMD("") } }, */
-	{ MODKEY,			XK_f,		togglefullscr,	{0} },
-	{ MODKEY|ShiftMask,		XK_f,		setlayout,	{.v = &layouts[8]} },
-	{ MODKEY,			XK_g,		shiftview,	{ .i = -1 } },
-	{ MODKEY|ShiftMask,		XK_g,		shifttag,	{ .i = -1 } },
+	/* { MODKEY|ShiftMask,			XK_s,		spawn,		SHCMD("") }, */
+	{ MODKEY,				XK_d,		spawn,          {.v = dmenucmd } },
+	/* { MODKEY,				XK_d,		spawn,		SHCMD("") } }, */
+	{ MODKEY,				XK_f,		togglefullscr,	{0} },
+	{ MODKEY|ShiftMask,			XK_f,		setlayout,	{.v = &layouts[8]} },
+	{ MODKEY,				XK_g,		shiftview,	{ .i = -1 } },
+	{ MODKEY|ShiftMask,			XK_g,		shifttag,	{ .i = -1 } },
 	/* J and K are automatically bound above in STACKEYS */
-	{ MODKEY,			XK_l,		setmfact,      	{.f = +0.05} },
-	{ MODKEY,			XK_h,		setmfact,      	{.f = -0.05} },
-	{ MODKEY,			XK_semicolon,	shifttag,	{ .i = +1 } },
-	{ MODKEY|ShiftMask,		XK_semicolon,	shifttag,	{ .i = -1 } },
-	{ MODKEY,			XK_apostrophe,	togglescratch,	{.ui = 1} },
-	{ MODKEY|ShiftMask,		XK_apostrophe,	spawn,		SHCMD("") },
-	{ MODKEY,			XK_Return,	spawn,		{.v = termcmd } },
-	{ MODKEY|ShiftMask,		XK_Return,	togglescratch,	{.ui = 0} },
+	{ MODKEY,				XK_l,		setmfact,      	{.f = +0.05} },
+	{ MODKEY,				XK_h,		setmfact,      	{.f = -0.05} },
+	{ MODKEY,				XK_semicolon,	shifttag,	{ .i = +1 } },
+	{ MODKEY|ShiftMask,			XK_semicolon,	shifttag,	{ .i = -1 } },
+	{ MODKEY,				XK_apostrophe,	togglescratch,	{.ui = 1} },
+	{ MODKEY|ShiftMask,			XK_apostrophe,	spawn,		SHCMD("") },
+	{ MODKEY,				XK_Return,	spawn,		{.v = termcmd } },
+	{ MODKEY|ShiftMask,			XK_Return,	togglescratch,	{.ui = 0} },
 
-	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
-	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
-	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
-	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-	/* { MODKEY|ShiftMask,		XK_z,		spawn,		SHCMD("") }, */
-	/* { MODKEY|ShiftMask,		XK_x,		spawn,		SHCMD("") }, */
-	/* { MODKEY,			XK_c,		spawn,		SHCMD("") }, */
-	/* { MODKEY|ShiftMask,		XK_c,		spawn,		SHCMD("") }, */
+	{ MODKEY,                       	XK_comma,  focusmon,       {.i = -1 } },
+	{ MODKEY,                       	XK_period, focusmon,       {.i = +1 } },
+	{ MODKEY|ShiftMask,             	XK_comma,  tagmon,         {.i = -1 } },
+	{ MODKEY|ShiftMask,             	XK_period, tagmon,         {.i = +1 } },
+	/* { MODKEY|ShiftMask,			XK_z,		spawn,		SHCMD("") }, */
+	/* { MODKEY|ShiftMask,			XK_x,		spawn,		SHCMD("") }, */
+	/* { MODKEY,				XK_c,		spawn,		SHCMD("") }, */
+	/* { MODKEY|ShiftMask,			XK_c,		spawn,		SHCMD("") }, */
 	/* V is automatically bound above in STACKKEYS */
 	{ MODKEY|Mod1Mask,			XK_b,		togglebar,	{0} },
-	/* { MODKEY|ShiftMask,		XK_b,		spawn,		SHCMD("") }, */
+	/* { MODKEY|ShiftMask,			XK_b,		spawn,		SHCMD("") }, */
 
-	{ MODKEY,			XK_Page_Up,	shiftview,	{ .i = -1 } },
-	{ MODKEY|ShiftMask,		XK_Page_Up,	shifttag,	{ .i = -1 } },
-	{ MODKEY,			XK_Page_Down,	shiftview,	{ .i = +1 } },
-	{ MODKEY|ShiftMask,		XK_Page_Down,	shifttag,	{ .i = +1 } },
-	{ MODKEY,			XK_Insert,	spawn,		SHCMD("notify-send \"📋 Clipboard contents:\" \"$(xclip -o -selection clipboard)\"") },
+	{ MODKEY,				XK_Page_Up,	shiftview,	{ .i = -1 } },
+	{ MODKEY|ShiftMask,			XK_Page_Up,	shifttag,	{ .i = -1 } },
+	{ MODKEY,				XK_Page_Down,	shiftview,	{ .i = +1 } },
+	{ MODKEY|ShiftMask,			XK_Page_Down,	shifttag,	{ .i = +1 } },
+	{ MODKEY,				XK_Insert,	spawn,		SHCMD("notify-send \"📋 Clipboard contents:\" \"$(xclip -o -selection clipboard)\"") },
 
-	{ MODKEY,			XK_F12,		xrdb,		{.v = NULL } },
-	{ MODKEY,			XK_space,	zoom,		{0} },
-	{ MODKEY|ShiftMask,		XK_space,	togglefloating,	{0} },
+	{ MODKEY,				XK_F12,		xrdb,		{.v = NULL } },
+	{ MODKEY,				XK_space,	zoom,		{0} },
+	{ MODKEY|ShiftMask,			XK_space,	togglefloating,	{0} },
 
 };
 
